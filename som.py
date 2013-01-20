@@ -1,6 +1,7 @@
 import numpy
 from sklearn.decomposition import RandomizedPCA
 
+
 class SOM():
     def __init__(self, x, y):        
         self.map = []
@@ -46,10 +47,8 @@ class SOM():
     
     def transform(self, X):
         # We simply compute the dot product of the input with the transpose of the map to get the new input vectors
-        res = numpy.dot(X,self.map.T)
-        
-        # We scale down new input vectors to values between 0 and 1
-        res = res / (numpy.sum(self.map, axis=1))
+        res = numpy.dot(numpy.exp(X),numpy.exp(self.map.T))/numpy.sum(numpy.exp(self.map), axis=1)
+        res = res / (numpy.exp(numpy.max(res)) + 1e-8)
         return res
      
     def iterate(self, vector):  
@@ -111,10 +110,13 @@ def demo():
     img = Image.fromarray(W)
     img.save("som_results.png")
     
-    # creating new inputs
-    #newX = cl.transform(X)
     
-    return cl.map, X, y
+    # creating new inputs
+    X = cl.transform(X)
+   
+    # we can plot "landscape" 3d to view the map in 3d
+    landscape = cl.transform(numpy.ones((1,28**2)))
+    return cl.map, X, y,landscape
     
     
 if __name__ == '__main__':
