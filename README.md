@@ -7,7 +7,7 @@ with less variables. In my example, I am using a SOM to reduce the dimensionalit
 </p>
 <p>
 SOM uses competitive learning. For every example we present to the SOM, we improve only the group neurons that best represent that example. 
-As we run through the whole dataset, the algorithm will make groups of neurons special in representing subsets of the data.
+As we run through the whole dataset, the algorithm will make groups of neurons specialize themselves in representing subsets of the data.
 </p>
 
 Libraries I am using:
