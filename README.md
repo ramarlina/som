@@ -20,3 +20,5 @@ Training Model:<br/>
     som.train(X, 2000)  <br/>
         - X is the input vector<br/>
         - 2000 is the number of iterations<br/>
+
+<div><img src="https://github.com/ramarlina/som/blob/master/som_results.png" alt="results" /></div>
