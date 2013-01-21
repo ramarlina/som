@@ -26,6 +26,6 @@ Training Model:<br/>
 <div>
     <h1>Results</h1>
     <p>Here is what we get: </p>
-    <img src="http:\\www.manasoa.com\som_results.png" alt="results" />
+    <img src="http://blog.manasoa.com/som_results.png" alt="results" />
 
 </div>
