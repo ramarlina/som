@@ -21,4 +21,4 @@ Training Model:<br/>
         - X is the input vector<br/>
         - 2000 is the number of iterations<br/>
 
-<div><img src="https://github.com/ramarlina/som/blob/master/som_results.png" alt="results" /></div>
+<div><img src="http:\\www.manasoa.com\som_results.png" alt="results" /></div>
