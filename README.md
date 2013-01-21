@@ -21,4 +21,11 @@ Training Model:<br/>
         - X is the input vector<br/>
         - 2000 is the number of iterations<br/>
 
-<div><img src="http:\\www.manasoa.com\som_results.png" alt="results" /></div>
+
+
+<div>
+    <h1>Results</h1>
+    <p>Here is what we get: </p>
+    <img src="http:\\www.manasoa.com\som_results.png" alt="results" />
+
+</div>
